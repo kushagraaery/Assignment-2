@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kushagra University</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="pu-logo.png" />
+          <ul>
+            <strong>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">OUR ADMINISTRATION</a></li>
+              <li><a href="#">ACADEMICS</a></li>
+              <li><a href="#">EXAMINATION</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+            </strong>
+          </ul>
+        </div>
+      </div>
+
+      <div class="title">
+        <h1>OUR MISSION</h1>
+        <br />
+        <p1>
+          <strong>
+            "The University has been incorporated for the purpose, among others,
+            of making provision for imparting education in Arts, Letters,
+            Science and the learned professions and of furthering advancement of
+            learning, the prosecution of original research, with power to
+            appoint University Professors, Readers and Lecturers, to hold and
+            manage educational endowments, to erect, equip and maintain
+            University colleges, libraries, laboratories and museums, to making
+            regulations relating to the residence and conduct of students and to
+            do all such acts as tend to promote study and research".
+          </strong>
+        </p1>
+      </div>
+
+      <div class="line">
+        <div class="content">
+          <div class="table">
+            <style>
+              table,
+              th,
+              td {
+                border: 1px solid #f2f2f2;
+              }
+            </style>
+
+            <h2 style="color: #f55">STATISTICS</h2>
+            <table style="width: 50%">
+              <tr>
+                <th>YEAR</th>
+                <th>ADMISSIONS (Per Year)</th>
+                <th>GRADUATION%</th>
+                <th>RESEARCH PAPERS PUBLISHED (Per Year)</th>
+                <th>PLACEMENTS</th>
+              </tr>
+              <strong>
+                <tr>
+                  <td>2019</td>
+                  <td>7000+</td>
+                  <td>75%</td>
+                  <td>400</td>
+                  <td class="cell-highlight">85% and above</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>7500+</td>
+                  <td>80%</td>
+                  <td>450</td>
+                  <td class="cell-highlight">90% and above</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>8000+</td>
+                  <td>85%</td>
+                  <td>500</td>
+                  <td class="cell-highlight">95% and above</td>
+                </tr>
+              </strong>
+            </table>
+          </div>
+          <div class="video">
+            <p1><strong style="color: #f55"> CAMPUS TOUR </strong></p1>
+            <iframe
+              width="360"
+              height="240"
+              src="https://www.youtube.com/embed/bbAMp8_iq8o"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="collegedunia">
+          <p1><strong style="color: #f55"> COLLEGE DUNIA </strong></p1>
+          <iframe
+            src="https://collegedunia.com/india-colleges"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="form" id="form">
+          <div class="start"><strong style="color: #f55"> FORM </strong></div>
+          <form action="#" onsubmit="return checkValidation()">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Contact No.</span>
+                <input
+                  type="text"
+                  id="contact-num"
+                  placeholder="Enter Your Contact Number"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Query</span>
+                <input
+                  type="text"
+                  id="query"
+                  placeholder="Enter Your Concern"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">Email Id</span>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Enter Your Email Address"
+                  required
+                />
+              </div>
+              <div class="button">
+                <input type="submit" value="DONE" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="icon">
+          <head>
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+              integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+            />
+          </head>
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+          <a href="https://twitter.com/i/flow/login">
+            <i class="fa-brands fa-twitter fa-3x"></i>
+          </a>
+          <a href="https://www.instagram.com/?hl=en">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+    let checkValidation = () => {
+      let name = document.getElementById("fullname");
+      let email = document.getElementById("email");
+      let contact = document.getElementById("contact-num");
+      let query = document.getElementById("query");
+
+      let check_letter_regex = /^[A-Za-z]+$/;
+      let number = /^\d{10}$/;
+      let emails_fmt = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+      if (name.value === "") {
+        alert(`please ${name.placeholder}`);
+        name.focus();
+        return false;
+      } else if (!name.value.match(check_letter_regex)) {
+        alert("full name must have alphabet characters only.");
+        name.focus();
+        return false;
+      } else if (contact.value === "") {
+        alert(`please ${contact.placeholder}`);
+        contact.focus();
+        return false;
+      } else if (!contact.value.match(number)) {
+        alert("phone number must have 10 digit number.");
+        contact.focus();
+        return false;
+      } else if (query.value === "") {
+        alert(`please ${query.placeholder}`);
+        query.focus();
+        return false;
+      } else if (email.value === "") {
+        alert(`please ${email.placeholder}`);
+        email.focus();
+        return false;
+      } else if (!email.value.match(emails_fmt)) {
+        alert("Please enter a valid email");
+        email.focus();
+        return false;
+      }
+      alert("ThankYou!! form has been submitted.");
+      return true;
+    };
+  </script>
+</html>

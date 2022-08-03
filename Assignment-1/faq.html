@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/faq.css" />
+    <title>Faq page</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Frequently Asked Questions</h1>
+      <section>
+        <div class="content">
+          <div>
+            <h2>Question 1?</h2>
+            <span>
+              <button
+                class="show-btn"
+                value="q1"
+                onclick="showAnswer(this.value)"
+              >
+                show
+              </button>
+            </span>
+          </div>
+          <p id="q1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt u.
+          </p>
+        </div>
+        <div class="content">
+          <div>
+            <h2>Question 2?</h2>
+            <span>
+              <button
+                class="show-btn"
+                value="q2"
+                onclick="showAnswer(this.value)"
+              >
+                show
+              </button>
+            </span>
+          </div>
+          <p id="q2">Lorem ipsum dolor sit amet, .</p>
+        </div>
+        <div class="content">
+          <div>
+            <h2>Question 3?</h2>
+            <div>
+              <span>
+                <button
+                  class="show-btn"
+                  value="q3"
+                  onclick="showAnswer(this.value)"
+                >
+                  show
+                </button>
+              </span>
+            </div>
+          </div>
+          <p id="q3">Lorem ipsum dolor sit amet,</p>
+        </div>
+
+        <div class="content">
+          <div>
+            <h2>Question 4?</h2>
+            <span>
+              <button
+                class="show-btn"
+                value="q4"
+                onclick="showAnswer(this.value)"
+              >
+                show
+              </button>
+            </span>
+          </div>
+          <p id="q4">Lorem ipsum dolor sit amet,</p>
+        </div>
+
+        <div class="content">
+          <div>
+            <h2>Question 5?</h2>
+            <span>
+              <button
+                class="show-btn"
+                value="q5"
+                onclick="showAnswer(this.value)"
+              >
+                show
+              </button>
+            </span>
+          </div>
+          <p id="q5">Lorem ipsum dolor sit amet,</p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    let arr = ["q1", "q2", "q3", "q4", "q5"];
+    let showAnswer = (e) => {
+      arr.forEach((item) => {
+        if (item === e) {
+          document.getElementById(item).style.display = "block";
+        } else {
+          document.getElementById(item).style.display = "none";
+        }
+      });
+    };
+  </script>
+</html>
